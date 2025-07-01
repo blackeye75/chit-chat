@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <div className='h-screen' data-theme={dark}>
+    <div className='h-screen' data-theme={theme}>
       <Routes>
         <Route
           path="/"
