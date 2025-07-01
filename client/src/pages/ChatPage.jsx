@@ -96,9 +96,9 @@ const ChatPage = () => {
 
   return (
     <div className="h-full ">
-      <Chat client={chatClient} customClasses={{ chat: "h-full" }}>
+      <Chat client={chatClient} >
         <Channel channel={channel}>
-          <div className="w-full p-5 relative">
+          <div className="w-full relative">
             <CallButton handleVideoCall={handleVideoCall} />
             <Window  >
               <ChannelHeader />
