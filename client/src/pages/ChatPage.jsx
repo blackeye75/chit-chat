@@ -95,12 +95,12 @@ const ChatPage = () => {
   if (loading || !chatClient || !channel) return <ChatLoader />;
 
   return (
-    <div className="h-[93vh]">
-      <Chat client={chatClient}>
+    <div className="h-full ">
+      <Chat client={chatClient} customClasses={{ chat: "h-full" }}>
         <Channel channel={channel}>
-          <div className="w-full relative">
+          <div className="w-full p-5 relative">
             <CallButton handleVideoCall={handleVideoCall} />
-            <Window>
+            <Window  >
               <ChannelHeader />
               <MessageList />
               <MessageInput focus />
