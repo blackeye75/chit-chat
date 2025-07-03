@@ -25,16 +25,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-end w-full">
           {/* LOGO - ONLY IN THE CHAT PAGE */}
-          {isChatPage && (
+          {/* {isChatPage && ( */}
             <div className="pl-5">
               <Link to="/" className="flex items-center gap-2.5">
-                <ShipWheelIcon className="size-9 text-primary" />
+                <ShipWheelIcon className="size-9
+                text-primary" />
                 <span className="sm:text-3xl text-lg leading-tight font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary  tracking-wider">
                   Chit-Chat
                 </span>
               </Link>
             </div>
-          )}
+          {/* )} */}
 
           <div className="flex items-center gap-3 sm:gap-4 ml-auto">
             <Link to={"/notifications"}>
